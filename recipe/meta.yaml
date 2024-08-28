@@ -11,15 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 1
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
+    - setuptools
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
@@ -42,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - danilomendesdias
+    - iamthebot

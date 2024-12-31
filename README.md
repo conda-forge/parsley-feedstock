@@ -151,4 +151,5 @@ Feedstock Maintainers
 =====================
 
 * [@danilomendesdias](https://github.com/danilomendesdias/)
+* [@iamthebot](https://github.com/iamthebot/)
 
